@@ -1,5 +1,13 @@
 # Simple SVG Plotter 
 Given various drawing commands from within a text area, the application draws them in real-time onto an SVG element. 
+This application has been built by React. 
+
+## Live demo: 
+This application is available at the website. 
+
+https://svg-plotter.netlify.app/
+
+I have setup CI/CD pipeline with this GitHub repo and [Netlify](https://www.netlify.com/).
 
 ## Setup:
 Follow the steps below to setup this application. 
@@ -49,5 +57,5 @@ See mobile.png and desktop.png
 <img src="./README/desktop.png" width=500px>
 
 
-<img src="./README/mobile.png" width=500px>
+<img src="./README/mobile.png" width=200px>
 
