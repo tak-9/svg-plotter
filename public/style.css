@@ -1,0 +1,109 @@
+html, body { 
+    background-color: #F9FBFD;
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #3B4954;
+    width: 100%;
+}
+
+.text-center { 
+    text-align: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+    html, body { 
+        margin: 0px; 
+        padding: 0px;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flex-box {
+        width: 100%;
+    }
+
+    textarea { 
+        width: 95%;
+    }
+
+    .usage { 
+        font-size: 10px;
+        margin: 10px 0px 10px 10px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .flex-container {
+        display: flex;
+        justify-content: center;
+        /* background-color: DodgerBlue;  */
+    }
+    
+    .flex-box {
+        /* background-color: #f1f1f1; */
+        margin: 10px;
+        padding: 20px;
+    }
+
+    textarea { 
+        width: 440px;
+        height: 100px;
+        border-radius: 10px;
+        border: solid 2px #C0C7CF;
+        box-shadow: 5px 8px 8px #E4E6E8;
+        padding: 10px;
+        margin: 0px auto 15px auto;
+    }
+
+    .box { 
+        border: solid 2px #C0C7CF;
+        width: 400px;
+        height: 270px;
+        padding: 15px 30px 30px 30px;
+        margin: auto;
+        text-align: center;
+        background: white;
+        box-shadow: 5px 8px 8px #E4E6E8;
+        border-radius: 10px;
+    }
+
+    .usage { 
+        font-size: 12px;
+    }
+}
+
+svg {
+    margin-top: 10px;
+}
+
+button {
+    border: 0 none;
+    padding: 10px 20px 10px 20px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 18px;
+    color: white;
+    background:#008CBA;
+    margin: 20px auto 10px auto;
+    display: block;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #67cbf0;
+    color: white;
+}
+
+.usage { 
+    font-family: "Courier New", Courier, monospace;
+    text-align: left;
+}
+
+.error-message {
+    height: 20px;
+    color: red;
+}
