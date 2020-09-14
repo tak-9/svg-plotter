@@ -2,21 +2,21 @@
 Given various drawing commands from within a text area, the application draws them in real-time onto an SVG element. 
 This application has been built by React. 
 
-## Live demo: 
+## Live demo
 This application is available at the website. 
 
 https://svg-plotter.netlify.app/
 
 I have setup CI/CD pipeline with this GitHub repo and [Netlify](https://www.netlify.com/).
 
-## Setup:
+## Setup
 Follow the steps below to setup this application. 
 
 ```
 $npm install
 ```
 
-## Start application:
+## Start application
 
 ```
 $npm start
@@ -25,7 +25,7 @@ $npm start
 Open http://localhost:3000 
 The application looks identical on Google Chrome or Mozilla Firefox.  
 
-## Usage: 
+## Usage
 
 Enter a command and click Draw button to display SVG image. 
 
@@ -50,7 +50,7 @@ c 100 100 20
 ```
 
 
-## Bonus Features: 
+## Bonus Features 
 ### Additional Command:
 Another drawing command to draw a line. Use the command below. 
 
