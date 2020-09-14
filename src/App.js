@@ -29,9 +29,9 @@ function App() {
             // (^[lL]\s+[0-9]+\s+[0-9]+\s+[0-9]+\s+[0-9]+$) is for Line.
             const regEx = 
                 /(^[rR]\s+[0-9]+\s+[0-9]+\s+[0-9]+\s+[0-9]+$)|(^[cC]\s+[0-9]+\s+[0-9]+\s+[0-9]+$)|(^[pP](\s+[0-9]+,[0-9]+){3,}$)|(^[lL]\s+[0-9]+\s+[0-9]+\s+[0-9]+\s+[0-9]+$)/
-            console.log("validateInput", lineStr);
+            //console.log("validateInput", lineStr);
             if (!((lineStr.trim()).match(regEx))){ 
-                console.log("Error");
+                // Found error in user's input
                 isInputOK = false;
                 errorLineNumbers.push(lineNumber);
             }
