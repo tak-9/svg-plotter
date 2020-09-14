@@ -39,7 +39,15 @@ P <X1,Y1> <X2,Y2> <X3,Y3> ..... <Xn,Yn>
 Line:
 L <X1 Coordinate> <Y1 Coordinate> <X2 Coordinate> <Y2 Coordinate>
 ```
-Colour is choosen randomly.
+Colour is chosen randomly.
+
+
+Example:
+
+```
+r 0 0 100 100
+c 100 100 20
+```
 
 
 ## Bonus Features: 
