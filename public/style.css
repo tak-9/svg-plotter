@@ -9,11 +9,11 @@ html, body {
     width: 100%;
 }
 
+.text-left { 
+    text-align: left;
+}
+
 @media screen and (max-width: 992px) {
-    html, body { 
-        margin: 0px; 
-        padding: 0px;
-    }
 
     .flex-container {
         display: flex;
@@ -21,17 +21,17 @@ html, body {
         width: 100%;
     }
 
-    .flex-box {
-        width: 100%;
-    }
-
     textarea { 
         width: 95%;
     }
 
+    .text-left { 
+        margin: 10px 0 0 10px;
+    }
+
     .usage { 
         font-size: 10px;
-        margin: 10px 0px 10px 10px;
+        margin: 5px 0px 10px 10px;
     }
 }
 
@@ -39,11 +39,9 @@ html, body {
     .flex-container {
         display: flex;
         justify-content: center;
-        /* background-color: DodgerBlue;  */
     }
     
     .flex-box {
-        /* background-color: #f1f1f1; */
         margin: 10px;
         padding: 20px;
     }
@@ -56,6 +54,7 @@ html, body {
         box-shadow: 5px 8px 8px #E4E6E8;
         padding: 10px;
         margin: 0px auto 15px auto;
+        resize: none;
     }
 
     .box { 
@@ -65,9 +64,13 @@ html, body {
         padding: 15px 30px 30px 30px;
         margin: auto;
         text-align: center;
-        background: white;
+        background: #F9FBFD;
         box-shadow: 5px 8px 8px #E4E6E8;
         border-radius: 10px;
+    }
+
+    .text-left { 
+        margin-bottom: 7px;
     }
 
     .usage { 
@@ -84,7 +87,7 @@ button {
     padding: 10px 20px 10px 20px;
     text-align: center;
     border-radius: 20px;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     background:#008CBA;
     margin: 20px auto 10px auto;

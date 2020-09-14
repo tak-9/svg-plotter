@@ -102,7 +102,7 @@ function App() {
                 // Get the random color which has been added at the end of args
                 let randomColor = args[args.length - 1];
                 // Remove 'p' at begining from args. Remove color from last args. 
-                // Then, assign it to 'pointsVal' as string
+                // Then, assign it to 'pointsStr' as string
                 // For example, 
                 // p 200,10 250,190 160,210 #000000 -> 200,10 250,190 160,210
                 args.shift();
@@ -116,7 +116,6 @@ function App() {
                 return (
                     <line x1={args[1]} y1={args[2]} x2={args[3]} y2={args[4]} style={{stroke:args[5]}} />
                 )
-    
             default:
                 // This shouldn't happen because it's already checked by regEx. 
                 return(
@@ -131,7 +130,7 @@ function App() {
     const getRandomColor = () => {
         const letters = '0123456789ABCDEF';
         let color = '#';
-        for (var i = 0; i < 6; i++) {
+        for (let i = 0; i < 6; i++) {
             color += letters[Math.floor(Math.random() * 16)];
         }
         return color;
@@ -151,6 +150,9 @@ function App() {
                         placeholder="Enter command here..."
                     />
                     <br/>
+                    <div className="text-left">
+                        Usage:<br/>
+                    </div>
                     <div className="usage">
                         Rectangle: <br/>
                         R &lt;X Coordinate&gt; &lt;Y Coordinate&gt; &lt;Width&gt; &lt;Height&gt;<br/>

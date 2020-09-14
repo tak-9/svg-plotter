@@ -39,6 +39,8 @@ P <X1,Y1> <X2,Y2> <X3,Y3> ..... <Xn,Yn>
 Line:
 L <X1 Coordinate> <Y1 Coordinate> <X2 Coordinate> <Y2 Coordinate>
 ```
+Colour is choosen randomly.
+
 
 ## Bonus Features: 
 ### Additional Command:
