@@ -86,19 +86,17 @@ function App() {
         // Use RegEx /\s+/ as there may be more than one space char between parameters. 
         // use trim to remove spaces 
         let args = lineStr.trim().split(/\s+/);
-        switch (args[0]){
+        const shape = args[0].toUpperCase();
+        switch (shape){
             case 'R':
-            case 'r':
                 return (
                     <rect x={args[1]} y={args[2]} width={args[3]} height={args[4]} fill={args[5]} />
                 )
             case 'C':
-            case 'c':
                 return (
                     <circle cx={args[1]} cy={args[2]} r={args[3]} fill={args[4]} />
                 )
             case 'P':
-            case 'p':
                 // Get the random color which has been added at the end of args
                 let randomColor = args[args.length - 1];
                 // Remove 'p' at begining from args. Remove color from last args. 
@@ -112,12 +110,12 @@ function App() {
                     <polygon points={pointsStr} fill={randomColor} />
                 )
             case 'L':
-            case 'l':
                 return (
                     <line x1={args[1]} y1={args[2]} x2={args[3]} y2={args[4]} style={{stroke:args[5]}} />
                 )
             default:
                 // This shouldn't happen because it's already checked by regEx. 
+                setErrorMsg("Error in drawing SVG.");
                 return(
                     <>Error!</>
                 )
